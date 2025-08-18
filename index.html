@@ -81,11 +81,14 @@
      <form>
         <label for="fname">First name:</label><br>
         <input type="text" id="fname" name="fname"><br>
+        <!-- The for attribute of the <label> tag should be equal to the id
+             attribute of the <input> element to bind them together.  -->
+
         <label for="lname">Last name:</label><br>
         <input type="text" id="lname" name="lname">
      </form> 
 
-     
+
     <!-- radio buttons -->
     <p>Choose your favorite Web language:</p>
     <form>
@@ -95,7 +98,28 @@
         <label for="css">CSS</label><br>
         <input type="radio" id="javascript" name="fav_language" value="JavaScript">
         <label for="javascript">JavaScript</label>
-    </form>     
+        <!-- radio buttons in a form can be only checked once, you cant select multi -->
+    </form>   
+    
+    <form class="checkboxes">
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+          <label for="vehicle1"> I have a bike</label><br>
+          <!-- in html, here the name is the name of var and value is, well the value. upon clicking on checkbox
+           it stores like, vehicle1=Bike, which is what the backend will recieve.  -->
+          <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+         <label for="vehicle2"> I have a car</label><br>
+         <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+          <label for="vehicle3"> I have a boat</label>
+    </form> 
+
+
+    <!-- a download button in html  -->
+     <section class="down">
+        <a href="mailto:example.com" download>
+        <button>Download now</button>
+        </a>
+     </section>
+     <!--  above we used the download attribute, we can also use java script for the same  -->
     
      <footer>
         <p>created by: varad raut</p>
