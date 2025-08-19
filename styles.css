@@ -1,3 +1,10 @@
+:root{
+  --white:#ffffff;
+  --blue:#060698;
+}
+/* var function syntax: var(--name, value) */
+/* to accees them use: var(--blue) */
+
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #1b5f2c;
@@ -11,7 +18,7 @@ h1{
 
 .box{
   width: 300px;
-  border: 5px solid rgb(0, 87, 209);
+  border: 5px solid var(--blue);
   padding: 50px;
   text-align: center;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); 
@@ -136,3 +143,14 @@ ul{
   background-color: #b4d10e;
   color: black;
 }
+
+.flex-me{
+  font-size: 44px;
+  display:flex;
+  flex-direction: row;
+/* we used the direction row so it will go horizointally */
+}
+
+ /* flex-wrap: wrap;
+ can be used to make the flex wrap. i.e if the flex exceeds
+  the display width, it will go down, instead of pushing eveythign together */
