@@ -148,9 +148,15 @@ ul{
   font-size: 44px;
   display:flex;
   flex-direction: row;
+  row-gap: auto;
 /* we used the direction row so it will go horizointally */
 }
 
  /* flex-wrap: wrap;
  can be used to make the flex wrap. i.e if the flex exceeds
   the display width, it will go down, instead of pushing eveythign together */
+
+.img {
+  width: 10%;    /* scales relative to screen width */
+  height: auto;
+}
