@@ -160,3 +160,15 @@ ul{
   width: 10%;    /* scales relative to screen width */
   height: auto;
 }
+
+.big-box {
+  width: 1000px;
+  height: 1000px; 
+  background-color: var(--white); 
+  border: 2px solid var(--blue);
+  padding: 20px; /* Add internal spacing */
+  margin: auto auto; /* Center the box horizontally and add external spacing */
+}
+.big-box>h1{
+  font-size:43px;
+}
